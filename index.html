@@ -1,63 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image.jpg" href="images/leen.jpg">
 
     </head>
     <body>
-        <div id ="Main Head">
-            <h1>
-                <font color="red">Full Stack Web Developer</font>
-            </h1>
-            <p>
-                <font color="blue">is a person who can develop <br>
-                    both <em>client</em> and <em>server</em> software . <hr>
-                </font> 
-            </p>
+        <form action="test.html" method="GET">
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" placeholder="firstName" id="fname" name="firstName" required>
 
-        </div>
-        <div id="Body">
-            <h2>
-                <u>Front End Skills</u>
-            </h2>
-            <ol type="A">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol> <hr>
+                <label for="lname">Last Name:</label>
+                <input type="text" placeholder="lastName" id="lname" name="lastName" required>
+            </div>
+            <div>
+                <label for="opt1">Male</label>
+                <input type="radio" id="opt1" name="gender" value="male">
 
-            <h2>
-                <u>Back End Skills</u>
-            </h2>
-            <ul type="square">
-                <li>We Api</li>
-                <li>DataBase</li>
-            </ul> <hr>
-            <h2>
-                <mark>HTML Terms</mark>
-            </h2>
-            <dl>
-                <dt> <u>HTML</u></dt>
-                <dd>- Hyper Text Markup Language</dd>
-
-                <dt><u>CSS</u></dt>
-                <dd>- CSS Stands For Cascading Style sheets</dd>
-            </dl>
-
-        </div>
-        <div id="image">
-            <!--Creat Image -Resize-Alternative-Favicon-figure-->
-            <figure>
-            <img src="images/leen.jpg" height="369" width="500" alt="page Leen" title="Love ❤️❤️❤️❤️">
-            <figcaption><i>This Image For My Daughter</i></figcaption>
-            </figure>
-        </div>
-        <div id="Footer">
-            <p>
-                <font size="2">------This page Created By Ramzy-------</font>
-            </p>
-
-        </div>
-        
+                <label for="opt2">Female</label>
+                <input type="radio" id="opt2" name="gender" value="female">
+            </div>
+            <label for="birth">Birthday:</label>
+            <input type="date" id="birth">
+            <div>
+                <label for="agree">I agree to the terms and conditions </label>
+                <input type="checkbox" id="agree" name="Condtions">
+                
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
     </body>
 </html>
